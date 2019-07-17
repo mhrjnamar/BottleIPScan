@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="1dp"
+    card_view:cardCornerRadius="5dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/abc_search_url_text_normal"
+        android:elevation="15dp"
+        android:padding="2dp">
+
+
+        <TextView
+            android:id="@+id/deviceName"
+            android:text="@string/deviceName"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:paddingBottom="10dp"
+            android:paddingTop="5dp"/>
+
+        <TextView
+            android:id="@+id/deviceIp"
+            android:text="@string/ipPlaceholder"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/ipLabel"
+            android:layout_alignBottom="@+id/ipLabel"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/ipLabel"
+            android:text="@string/ipLabel"
+            android:layout_below="@+id/deviceName"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abc_primary_text_material_light"/>
+
+        <TextView
+            android:id="@+id/macAdd"
+            android:text="@string/macHolder"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/macLabel"
+            android:layout_alignBottom="@+id/macLabel"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/macLabel"
+            android:text="@string/mac_label"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/ipLabel"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/abc_primary_text_material_light"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
